@@ -59,7 +59,7 @@ export function PricingSection() {
 
   return (
     <section id="pricing" ref={ref} className="py-20 bg-muted/30">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

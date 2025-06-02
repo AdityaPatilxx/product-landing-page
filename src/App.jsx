@@ -10,26 +10,26 @@ import {
   MessageSquare,
   Users,
 } from "lucide-react";
-import { Button } from "./ui/button.jsx";
-import HeroAnimation from "./hero-animation.jsx";
-import { ClientLogos } from "./client-logos.jsx";
-import { FeatureGrid } from "./feature-grid.jsx";
-import { PricingSection } from "./pricing-section.jsx";
-import { TrustSection } from "./trust-section.jsx";
-import { LeadCaptureForm } from "./lead-capture-form.jsx";
+import { Button } from "./components/ui/button.jsx";
+import HeroAnimation from "./components/HeroAnimation.jsx";
+import { ClientLogos } from "./components/ClientLogos.jsx";
+import { FeatureGrid } from "./components/FeatureGrid.jsx";
+import { PricingSection } from "./components/PricingSection.jsx";
+import { TrustSection } from "./components/TrustSection.jsx";
+import { LeadCaptureForm } from "./components/LeadCaptureForm.jsx";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "./ui/card.jsx";
+} from "./components/ui/card.jsx";
 
-function App() {
+export default function App() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container mx-auto flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Shield className="h-6 w-6 text-primary" />
             <span className="text-xl font-bold">LegalAI</span>
@@ -79,7 +79,7 @@ function App() {
 
       <main className="flex-1">
         <section className="relative overflow-hidden py-20 md:py-32">
-          <div className="container relative z-10">
+          <div className="container mx-auto relative z-10">
             <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -161,7 +161,7 @@ function App() {
         <FeatureGrid />
 
         <section className="py-20 bg-muted/30">
-          <div className="container">
+          <div className="container mx-auto">
             <div className="text-center mb-16">
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
@@ -355,7 +355,7 @@ function App() {
         <TrustSection />
 
         <section className="py-20 bg-primary/5">
-          <div className="container">
+          <div className="container mx-auto">
             <div className="mx-auto max-w-3xl text-center">
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
@@ -391,7 +391,7 @@ function App() {
       </main>
 
       <footer className="border-t py-12">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="col-span-2 md:col-span-1">
               <div className="flex items-center gap-2 mb-4">
@@ -524,4 +524,4 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+

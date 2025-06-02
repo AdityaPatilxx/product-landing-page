@@ -17,7 +17,7 @@ export function ClientLogos() {
 
   return (
     <section ref={ref} className="py-12 border-y bg-muted/30">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="text-center mb-8">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
