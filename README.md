@@ -39,7 +39,7 @@ To get started with the project, follow these steps:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/legalai-landing-page.git
+   git clone https://github.com/AdityaPatilxx/product-landing-page.git
    cd legalai-landing-page
    ```
 
